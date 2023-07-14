@@ -41,3 +41,5 @@ const requestHandler = (req,res) => {
 module.exports = requestHandler;
 
 // module.exports.handler = requestHandler ; another method
+
+// the idea for adding nodemon dependency is so if we add any changes we don't have to restart the server everything it restarts the server automatically 
