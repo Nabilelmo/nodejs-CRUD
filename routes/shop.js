@@ -8,4 +8,5 @@ const router = express.Router();
 
 router.get('/', ProductsControllers.getProdcts);// no () because we dont want to execute
 
+
 module.exports = router;
