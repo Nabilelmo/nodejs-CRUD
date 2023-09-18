@@ -1,4 +1,5 @@
 const path = require('path');
+<<<<<<< HEAD
 const express = require('express');
 
 const router = express.Router();
@@ -8,3 +9,23 @@ router.get('/',(req,res,next)=>{ // same as .use but will fire only when getting
 });
 
 module.exports = router;
+=======
+
+const express = require('express');
+
+const shopController = require('../controllers/shop');
+
+const router = express.Router();
+
+router.get('/', shopController.getIndex);
+
+router.get('/products', shopController.getProducts);
+
+router.get('/cart', shopController.getCart);
+
+router.get('/orders', shopController.getOrders);
+
+router.get('/checkout', shopController.getCheckout);
+
+module.exports = router;
+>>>>>>> 7e96b3e (dynamic)
